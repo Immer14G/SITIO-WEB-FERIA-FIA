@@ -3,71 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERIA FIA</title>
     <link rel="stylesheet" href="style.css">
-    <title> FERIA FIA</title>
-   
 </head>
 <body>
-   
     <header>
-        <h1>PROYECTOS FIA </h1>
+        <h1>PROYECTOS FIA</h1>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#carreras">Carreras</a></li>
+                <li><a href="#carreras" onclick="mostrarCarreras()">Carreras</a></li>
+                <script src="./controlar.js"></script>
                 <li><a href="#noticias">Noticias</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-
     <div class="contenido">
-        <div class="tarjeta">
+        <div class="tarjeta" onclick="mostrarInformacion('Arquitectura', 'Descripción breve del Proyecto 1.')">
             <h2>Arquitectura</h2>
             <img src="./images/b1.png" alt="Proyecto 1">
             <p>Descripción breve del Proyecto 1.</p>
         </div>
-        <div class="tarjeta">
-            <h2>Ingenieria civil</h2>
+        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Civil', 'Descripción breve del Proyecto 2.')">
+            <h2>Ingeniería Civil</h2>
             <img src="./images/b1.png" alt="Proyecto 2">
             <p>Descripción breve del Proyecto 2.</p>
         </div>
-        <div class="tarjeta">
-            <h2>Ingenieria en desarrollo de software</h2>
+        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería en Desarrollo de Software', 'Descripción breve del Proyecto 3.')">
+            <h2>Ingeniería en Desarrollo de Software</h2>
             <img src="./images/b1.png" alt="Proyecto 3">
             <p>Descripción breve del Proyecto 3.</p>
         </div>
-        <div class="tarjeta">
-            <h2>Ingenieria Industrial</h2>
+        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Industrial', 'Descripción breve del Proyecto 4.')">
+            <h2>Ingeniería Industrial</h2>
             <img src="./images/b1.png" alt="Proyecto 4">
             <p>Descripción breve del Proyecto 4.</p>
         </div>
-        <div class="tarjeta">
-            <h2>Ingenieria Electrica</h2>
+        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Eléctrica', 'Descripción breve del Proyecto 5.')">
+            <h2>Ingeniería Eléctrica</h2>
             <img src="./images/b1.png" alt="Proyecto 5">
             <p>Descripción breve del Proyecto 5.</p>
         </div>
-        <div class="tarjeta">
-            <h2>Arquitectura</h2>
-            <img src="./images/b1.png" alt="Proyecto 6">
-            <p>Descripción breve del Proyecto 6.</p>
-        </div>
-        <div class="tarjeta">
-            <h2>Ingenieria civil</h2>
-            <img src="./images/b1.png" alt="Proyecto 7">
-            <p>Descripción breve del Proyecto 7.</p>
-        </div>
-        <div class="tarjeta">
-            <h2>Ingenieria en desarrollo de software</h2>
-            <img src="./images/b1.png" alt="Proyecto 8">
-            <p>Descripción breve del Proyecto 8.</p>
-        </div>
-        <div class="tarjeta">
-            <h2>Ingenieria Electrica</h2>
-            <img src="./images/b1.png" alt="Proyecto 9">
-            <p>Descripción breve del Proyecto 9.</p>
-        </div>
     </div>
+
+    <script src="./javascript/controlar.js"></script> 
 </body>
 </html>
