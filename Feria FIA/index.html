@@ -13,41 +13,77 @@
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#carreras" onclick="mostrarCarreras()">Carreras</a></li>
-                <script src="./controlar.js"></script>
                 <li><a href="#noticias">Noticias</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="contenido">
-        <div class="tarjeta" onclick="mostrarInformacion('Arquitectura', 'Descripción breve del Proyecto 1.')">
+    <div class="contenido" id="selection">
+        <!-- Proyectos -->
+        <div class="tarjeta" onclick="mostrarInformacion('Arquitectura', 'Descripción breve del Proyecto 1.', './images/b1.png')">
             <h2>Arquitectura</h2>
             <img src="./images/b1.png" alt="Proyecto 1">
             <p>Descripción breve del Proyecto 1.</p>
         </div>
-        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Civil', 'Descripción breve del Proyecto 2.')">
+        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Civil', 'Descripción breve del Proyecto 2.', './images/b2.png')">
             <h2>Ingeniería Civil</h2>
             <img src="./images/b1.png" alt="Proyecto 2">
             <p>Descripción breve del Proyecto 2.</p>
         </div>
-        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería en Desarrollo de Software', 'Descripción breve del Proyecto 3.')">
+        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería en Desarrollo de Software', 'Descripción breve del Proyecto 3.', './images/b3.png')">
             <h2>Ingeniería en Desarrollo de Software</h2>
             <img src="./images/b1.png" alt="Proyecto 3">
             <p>Descripción breve del Proyecto 3.</p>
         </div>
-        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Industrial', 'Descripción breve del Proyecto 4.')">
+        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Industrial', 'Descripción breve del Proyecto 4.', './images/b4.png')">
             <h2>Ingeniería Industrial</h2>
             <img src="./images/b1.png" alt="Proyecto 4">
             <p>Descripción breve del Proyecto 4.</p>
         </div>
-        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Eléctrica', 'Descripción breve del Proyecto 5.')">
+        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Eléctrica', 'Descripción breve del Proyecto 5.', './images/b5.png')">
             <h2>Ingeniería Eléctrica</h2>
             <img src="./images/b1.png" alt="Proyecto 5">
             <p>Descripción breve del Proyecto 5.</p>
         </div>
+        <div class="tarjeta" onclick="mostrarInformacion('Arquitectura', 'Descripción breve del Proyecto 6.', './images/b6.png')">
+            <h2>Arquitectura</h2>
+            <img src="./images/b1.png" alt="Proyecto 6">
+            <p>Descripción breve del Proyecto 6.</p>
+        </div>
+        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Civil', 'Descripción breve del Proyecto 7.', './images/b7.png')">
+            <h2>Ingeniería Civil</h2>
+            <img src="./images/b1.png" alt="Proyecto 7">
+            <p>Descripción breve del Proyecto 7.</p>
+        </div>
+        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería en Desarrollo de Software', 'Descripción breve del Proyecto 8.', './images/b8.png')">
+            <h2>Ingeniería en Desarrollo de Software</h2>
+            <img src="./images/b1.png" alt="Proyecto 8">
+            <p>Descripción breve del Proyecto 8.</p>
+        </div>
+        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Industrial', 'Descripción breve del Proyecto 9.', './images/b9.png')">
+            <h2>Ingeniería Industrial</h2>
+            <img src="./images/b1.png" alt="Proyecto 9">
+            <p>Descripción breve del Proyecto 9.</p>
+        </div>
+        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Eléctrica', 'Descripción breve del Proyecto 10.', './images/b10.png')">
+            <h2>Ingeniería Eléctrica</h2>
+            <img src="./images/b1.png" alt="Proyecto 10">
+            <p>Descripción breve del Proyecto 10.</p>
+        
+        </div>
     </div>
 
-    <script src="./javascript/controlar.js"></script> 
+   
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <img id="modal-imagen" src="" alt="Imagen del proyecto">
+            <p id="modal-descripcion"></p>
+        </div>
+    </div>
+
+    <script src="./controlar.js"></script>
 </body>
 </html>
