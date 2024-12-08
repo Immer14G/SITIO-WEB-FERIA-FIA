@@ -1,80 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FERIA FIA</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>PROYECTOS FIA</h1>
+        <h1>FERIA FIA 2024</h1>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#carreras" onclick="mostrarCarreras()">Carreras</a></li>
+                <li><a href="#carreras">Carreras</a></li>
                 <li><a href="#noticias">Noticias</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="contenido" id="selection">
-        <!-- Proyectos -->
-        <div class="tarjeta" onclick="mostrarInformacion('Arquitectura', 'Descripción breve del Proyecto 1.', './images/b1.png')">
-            <h2>Arquitectura</h2>
-            <img src="./images/b1.png" alt="Proyecto 1">
-            <p>Descripción breve del Proyecto 1.</p>
-        </div>
-        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Civil', 'Descripción breve del Proyecto 2.', './images/b2.png')">
-            <h2>Ingeniería Civil</h2>
-            <img src="./images/b1.png" alt="Proyecto 2">
-            <p>Descripción breve del Proyecto 2.</p>
-        </div>
-        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería en Desarrollo de Software', 'Descripción breve del Proyecto 3.', './images/b3.png')">
-            <h2>Ingeniería en Desarrollo de Software</h2>
-            <img src="./images/b1.png" alt="Proyecto 3">
-            <p>Descripción breve del Proyecto 3.</p>
-        </div>
-        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Industrial', 'Descripción breve del Proyecto 4.', './images/b4.png')">
-            <h2>Ingeniería Industrial</h2>
-            <img src="./images/b1.png" alt="Proyecto 4">
-            <p>Descripción breve del Proyecto 4.</p>
-        </div>
-        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Eléctrica', 'Descripción breve del Proyecto 5.', './images/b5.png')">
-            <h2>Ingeniería Eléctrica</h2>
-            <img src="./images/b1.png" alt="Proyecto 5">
-            <p>Descripción breve del Proyecto 5.</p>
-        </div>
-        <div class="tarjeta" onclick="mostrarInformacion('Arquitectura', 'Descripción breve del Proyecto 6.', './images/b6.png')">
-            <h2>Arquitectura</h2>
-            <img src="./images/b1.png" alt="Proyecto 6">
-            <p>Descripción breve del Proyecto 6.</p>
-        </div>
-        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Civil', 'Descripción breve del Proyecto 7.', './images/b7.png')">
-            <h2>Ingeniería Civil</h2>
-            <img src="./images/b1.png" alt="Proyecto 7">
-            <p>Descripción breve del Proyecto 7.</p>
-        </div>
-        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería en Desarrollo de Software', 'Descripción breve del Proyecto 8.', './images/b8.png')">
-            <h2>Ingeniería en Desarrollo de Software</h2>
-            <img src="./images/b1.png" alt="Proyecto 8">
-            <p>Descripción breve del Proyecto 8.</p>
-        </div>
-        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Industrial', 'Descripción breve del Proyecto 9.', './images/b9.png')">
-            <h2>Ingeniería Industrial</h2>
-            <img src="./images/b1.png" alt="Proyecto 9">
-            <p>Descripción breve del Proyecto 9.</p>
-        </div>
-        <div class="tarjeta" onclick="mostrarInformacion('Ingeniería Eléctrica', 'Descripción breve del Proyecto 10.', './images/b10.png')">
-            <h2>Ingeniería Eléctrica</h2>
-            <img src="./images/b1.png" alt="Proyecto 10">
-            <p>Descripción breve del Proyecto 10.</p>
-        
-        </div>
-    </div>
+    <!-- Introducción -->
+    <section id="inicio">
+        <h2>Bienvenidos a la Feria FIA</h2>
+        <p>Explora los mejores proyectos de las carreras de la Facultad de Ingeniería y Arquitectura. ¡Descubre la
+            creatividad y el talento de nuestros estudiantes!</p>
+    </section>
 
-   
+    <!-- Carreras -->
+    <section id="carreras">
+        <div class="contenido">
+            <div class="tarjeta">
+                <h2>Arquitectura</h2>
+                <img src="./images/arquitectura.jpg" alt="Arquitectura">
+                <p>Arquitectura es una disciplina que proporciona conocimientos técnicos y prácticos para el diseño,
+                    creación, renovación y restauración de espacios físicos donde el hombre desarrolla sus actividades,
+                    partiendo de soluciones simples a complejas, tales como, edificios y conjuntos urbanos.
+
+                    El profesional es formado en el cumplimiento de competencias que por medio de técnicas y con
+                    conocimiento para plasmar y solucionar los espacios habitables para el hombre, apoyado en la
+                    sensibilidad artística y expresión estética, involucrando aspectos como: urbanizador, constructor y
+                    diseñador de interiores, entre otros.</p>
+                <a href="arquitectura.html" class="boton">Ver proyectos</a>
+            </div>
+            <div class="tarjeta">
+                <h2>Ingeniería Civil</h2>
+                <img src="./images/ingenieriaCivil.png" alt="Ingeniería Civil">
+                <p>La Ingeniería Civil es una profesión que tiene como visión el desarrollo económico y social, por
+                    medio de la construcción de obras que aumenten la calidad de vida. Dentro de la carrera se realiza
+                    la construcción de infraestructura civil necesaria para generar desarrollo en el país, como es la
+                    construcción de carreteras, puentes, edificaciones, obras de protección y de mitigación de riesgos,
+                    obras de introducción de agua potable a las comunidades y de saneamiento por medio de la
+                    construcción de obras para el manejo de aguas residuales, de la mano de obras que aseguren la
+                    compensación ambiental necesaria para proteger el Medio Ambiente.</p>
+                <a href="ingenieriaCivil.html" class="boton">Ver proyectos</a>
+            </div>
+            <div class="tarjeta">
+                <h2>Ingeniería en Desarrollo de Software</h2>
+                <img src="./images/software.png" alt="Desarrollo de Software">
+                <p>Responde a necesidades de modernización y eficiencia de los procesos de las empresas. Supone a través
+                    de ella el incremento de la productividad y mejoramiento del estilo de vida de las personas que se
+                    forman en esta área, incluye temáticas como desarrollo de aplicaciones para dispositivos móviles,
+                    sistemas y sitios web, metodologías para el trabajo en equipo y competencias al nivel de la
+                    industria y garantía de la seguridad informática.</p>
+                <a href="software.html" class="boton">Ver proyectos</a>
+            </div>
+            <div class="tarjeta">
+                <h2>Ingeniería Industrial</h2>
+                <img src="./images/industrial.jpg" alt="Ingeniería Industrial">
+                <p>OLa Ingeniería Industrial es una disciplina que se especializa en el entendimiento de los procesos,
+                    en desarrollar y aplicar métodos, técnicas y/o modelos que permitan controlar y administrar
+                    eficientemente los sistemas de producción de bienes y servicios, es decir, su campo de acción se
+                    orienta a hacer una utilización óptima de los recursos disponibles.</p>
+                <a href="industrial.html" class="boton">Ver proyectos</a>
+            </div>
+            <div class="tarjeta">
+                <h2>Ingeniería en Energía y Eficiencia Energética</h2>
+                <img src="./images/eficiencia.jpg" alt="Ingeniería Eléctrica">
+                <p>La carrera de Ingeniería en Energía y Eficiencia Energética, nace con el propósito de crear
+                    profesionales que a través de sus conocimientos técnicos y científicos logren aportar desarrollo en
+                    el país y especialmente en la zona oriental; además de atender también las necesidades del sector
+                    eléctrico y electrónico nacional que cada vez demanda de profesionales enfocados a gestionar de
+                    manera eficiente la tecnología aplicada al sector
+                    Energético por medio de soluciones viables y que preserven el ecosistema.
+                    .</p>
+                <a href="eficienciaEnergetica.html" class="boton">Ver proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
     <div id="modal" class="modal">
         <div class="modal-contenido">
             <span class="cerrar" onclick="cerrarModal()">&times;</span>
@@ -84,6 +100,11 @@
         </div>
     </div>
 
+    <footer>
+        <p>© 2024 Feria FIA. Todos los derechos reservados.</p>
+    </footer>
+
     <script src="./controlar.js"></script>
 </body>
+
 </html>
