@@ -127,38 +127,4 @@ footer {
     padding: 10px;
 }
 
-/*se añadio media queries para que sea responsivo*/
-@media (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-    .tarjeta img {
-        width: 80%; 
-    }
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-    }
-}
-
-@media (min-width: 600px) and (max-width: 1200px) {
-    .contenido {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .tarjeta img {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .contenido {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .tarjeta img {
-        width: 25%;
-    }
-}
-
-
  
